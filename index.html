@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Nebula - A visual customization extension for Dream Journey AI">
+  <title>Privacy Policy - Nebula</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+    
+    :root {
+      --indigo-ink: #301466;
+      --rebecca-purple: #5c3d99;
+      --tropical-teal: #38a3a5;
+      --emerald: #57cc99;
+      --light-green: #80ed99;
+      --cotton-candy: #f992ad;
+      --bg-dark: #0a0118;
+      --bg-card: #1a0f2e;
+      --text-primary: #e8e3f0;
+      --text-secondary: #b8b0c8;
+      --text-muted: #8a7d9e;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--bg-dark) 0%, var(--indigo-ink) 50%, var(--bg-dark) 100%);
+      color: var(--text-primary);
+      line-height: 1.7;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+    
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 30%, var(--tropical-teal)10 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, var(--rebecca-purple)15 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+      padding-bottom: 30px;
+      border-bottom: 2px solid var(--rebecca-purple);
+      position: relative;
+    }
+    
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--tropical-teal), var(--light-green));
+      box-shadow: 0 0 20px var(--tropical-teal);
+    }
+    
+    .logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 56px;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--light-green), var(--tropical-teal), var(--cotton-candy));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 12px;
+      letter-spacing: 3px;
+      text-shadow: 0 0 40px var(--tropical-teal)30;
+    }
+    
+    .tagline {
+      font-size: 14px;
+      color: var(--text-secondary);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    
+    .hero {
+      background: linear-gradient(135deg, var(--bg-card), rgba(92, 61, 153, 0.2));
+      padding: 40px;
+      border-radius: 24px;
+      border: 2px solid var(--rebecca-purple)40;
+      margin-bottom: 48px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    
+    .hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 36px;
+      color: var(--light-green);
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+    
+    .dates {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+    
+    .dates span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .dates span::before {
+      content: '📅';
+    }
+    
+    .intro {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+    
+    .content {
+      background: var(--bg-card);
+      padding: 40px;
+      border-radius: 24px;
+      border: 2px solid var(--rebecca-purple)30;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    }
+    
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 28px;
+      color: var(--emerald);
+      margin-bottom: 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    h2::before {
+      content: '';
+      width: 6px;
+      height: 28px;
+      background: linear-gradient(180deg, var(--tropical-teal), var(--emerald));
+      border-radius: 3px;
+    }
+    
+    h3 {
+      font-size: 20px;
+      color: var(--light-green);
+      margin-top: 28px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    
+    p {
+      margin-bottom: 16px;
+      color: var(--text-secondary);
+    }
+    
+    ul {
+      margin: 16px 0;
+      padding-left: 24px;
+    }
+    
+    li {
+      margin-bottom: 12px;
+      color: var(--text-secondary);
+      position: relative;
+    }
+    
+    li::marker {
+      color: var(--tropical-teal);
+    }
+    
+    strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+    
+    code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      color: var(--cotton-candy);
+      border: 1px solid var(--rebecca-purple)30;
+    }
+    
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(56, 163, 165, 0.1), rgba(87, 204, 153, 0.1));
+      border-left: 4px solid var(--tropical-teal);
+      padding: 20px 24px;
+      border-radius: 12px;
+      margin: 24px 0;
+    }
+    
+    .highlight-box p {
+      margin: 0;
+      color: var(--text-primary);
+    }
+    
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 2px solid var(--rebecca-purple)30;
+      margin-top: 60px;
+    }
+    
+    footer p {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    
+    .footer-link {
+      color: var(--tropical-teal);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--rebecca-purple)30;
+    }
+    
+    .footer-link:hover {
+      color: var(--light-green);
+      background: var(--rebecca-purple)20;
+      border-color: var(--tropical-teal);
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 40px 16px;
+      }
+      
+      .logo {
+        font-size: 40px;
+      }
+      
+      .hero, .content {
+        padding: 24px;
+      }
+      
+      .hero h1 {
+        font-size: 28px;
+      }
+      
+      h2 {
+        font-size: 24px;
+      }
+      
+      .dates {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .content, .hero {
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+    
+    .content:nth-child(2) { animation-delay: 0.1s; }
+    .content:nth-child(3) { animation-delay: 0.2s; }
+    .content:nth-child(4) { animation-delay: 0.3s; }
+    .content:nth-child(5) { animation-delay: 0.4s; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="logo">Nebula</h1>
+      <p class="tagline">Make Your Dream Journey Colorful</p>
+    </header>
+    
+    <div class="hero">
+      <h1>Privacy Policy for Nebula</h1>
+      <div class="dates">
+        <span><strong>Effective Date:</strong> January 22, 2026</span>
+        <span><strong>Last Updated:</strong> January 22, 2026</span>
+      </div>
+      <p class="intro">
+        Nebula ("we," "our," or "the Extension") is committed to protecting user privacy. This Privacy Policy explains how we handle information when you use the Nebula Chrome Extension.
+      </p>
+    </div>
+
+    <div class="content">
+      <h2>1. Information Collection and Use</h2>
+      <p>Nebula is a visual customization tool for Dream Journey AI.</p>
+      
+      <ul>
+        <li>
+          <strong>No Personal Data Collection:</strong> We do not collect, store, or transmit any personally identifiable information (PII) such as your name, email address, physical address, or location.
+        </li>
+        <li>
+          <strong>No External Transmission:</strong> All data related to your custom skins, colors, and settings stay on your local device. We do not use external servers to store your preferences.
+        </li>
+      </ul>
+      
+      <div class="highlight-box">
+        <p><strong>✨ Your Privacy is Protected:</strong> Everything you create in Nebula stays on your device. We never see your customizations or settings.</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>2. Permissions and Data Handling</h2>
+      <p>To provide its core functionality, Nebula requires specific permissions:</p>
+      
+      <ul>
+        <li>
+          <strong>Storage:</strong> We use <code>chrome.storage.local</code> (and optionally <code>chrome.storage.sync</code>) to save your custom themes, font choices, and skin configurations locally on your device.
+        </li>
+        <li>
+          <strong>Host Permissions (dreamjourneyai.com):</strong> This is used solely to inject custom CSS and modify the visual appearance of the Dream Journey AI interface as per your settings. We do not read your private chat logs or account information.
+        </li>
+        <li>
+          <strong>Active Tab:</strong> Used only to apply your visual customizations to the active Dream Journey AI tab when you interact with the extension.
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2>3. Third-Party Sharing</h2>
+      <p>
+        We do not sell, trade, or otherwise transfer your information to third parties. Nebula does not include any third-party tracking, analytics, or advertising scripts.
+      </p>
+      
+      <h3>Google Fonts</h3>
+      <p>
+        When you select Google Fonts for customization, font files are loaded directly from Google's CDN. This follows Google Fonts' privacy policy and is a standard practice for web font delivery.
+      </p>
+    </div>
+
+    <div class="content">
+      <h2>4. Data Security</h2>
+      <p>
+        All customization data is stored locally in your browser using Chrome's secure storage API. You have complete control over your data:
+      </p>
+      <ul>
+        <li>You can export your skins at any time</li>
+        <li>You can delete skins individually</li>
+        <li>All data is removed when you uninstall the extension</li>
+        <li>Chrome sync settings respect your browser's sync preferences</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2>5. Changes to This Policy</h2>
+      <p>
+        We may update our Privacy Policy from time to time to reflect changes in our practices or for legal reasons. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.
+      </p>
+    </div>
+
+    <div class="content">
+      <h2>6. Contact</h2>
+      <p>
+        If you have questions about this Privacy Policy or concerns about how Nebula handles data, you may contact us via the support email provided on the Chrome Web Store listing.
+      </p>
+      
+      <div class="highlight-box">
+        <p><strong>🔒 Your Trust Matters:</strong> We're committed to transparency. If you have any questions or concerns, please don't hesitate to reach out.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Nebula Extension. All rights reserved.</p>
+      <p>This is an unofficial, community-created extension for Dream Journey AI.</p>
+      <div class="footer-links">
+
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
