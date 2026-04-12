@@ -1,6 +1,6 @@
 {
-  "name": "Gl!tch",
   "credit": "Nebula",
+  "name": "Gl!tch",
   "settings": {
     "aiBubbleBg": "#1e0948",
     "aiBubbleBorderColor": "#ee38de",
@@ -30,6 +30,8 @@
     "fontWeight": 400,
     "formBgColor": "#080714",
     "formBgOpacity": 0.8,
+    "glowColor1": "#ee00ff",
+    "glowColor2": "#0062ff",
     "hrCustomText": "▰▱▰▱▰▱▰▱▰▱▰▱▰",
     "hrFontSize": 14,
     "hrPadding": 10,
@@ -74,6 +76,7 @@
     "quoteStrongWeight": 900,
     "quoteStyle": "normal",
     "quoteWeight": 500,
+    "skinCredit": "Nebula",
     "textColor": "#ffffff",
     "textShadowBlur": 0,
     "textShadowColor": "#000000",
