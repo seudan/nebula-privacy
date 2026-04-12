@@ -1,5 +1,5 @@
 {
-  "credit": "",
+  "credit": "Nebula",
   "name": "Café",
   "settings": {
     "aiBubbleBg": "#000000",
@@ -30,6 +30,8 @@
     "fontWeight": 400,
     "formBgColor": "#000000",
     "formBgOpacity": 0,
+    "glowColor1": "#ffffff",
+    "glowColor2": "#9ba857",
     "hrCustomText": "☕🤍🌿☕🤍🌿",
     "hrFontSize": 18,
     "hrPadding": 28,
